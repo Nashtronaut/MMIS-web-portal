@@ -22,11 +22,11 @@ const UpdatePersonalInfoPage = () => {
                 fileStatus="Active"
                 person1={name}
                 person2="Ronald Reagan" />
-            <CurrentInfoPanel {...{name, dob, address, street, postalCode, province, country}} />
             <PageInfo header="Party Information"
                 info="When our records indicate that we do not have a valid address for you, you are
                 required to provide your current address in order to view the remaining information regarding your file."
                 highlightInfo="Please enter address information below." />
+            <CurrentInfoPanel {...{name, dob, address, street, postalCode, province, country}} />
             <UpdateInfoPanel {...{ name, dob, address, street, postalCode, province, country }} />
             <Box sx={{ position: 'absolute', bottom: 0, width: 1 }}>
                 <Footer />

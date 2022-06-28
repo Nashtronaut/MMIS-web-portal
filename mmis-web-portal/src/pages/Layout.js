@@ -4,6 +4,7 @@ import Flag from '../components/Flag';
 import SideMenu from '../components/SideMenu';
 import Footer from '../components/Footer'
 
+
 const containerSizing = {
     width: '80%',
     maxWidth: '100rem',

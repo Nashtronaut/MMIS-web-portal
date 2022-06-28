@@ -7,6 +7,7 @@ import ViewTermsPage from './pages/ViewTermsPage';
 import Layout from './pages/Layout';
 import ViewPaymentsPage from './pages/ViewPaymentsPage';
 import ViewDSAPage from './pages/ViewDSAPage';
+import NotImplementedPage from './pages/NotImplementedPage'
 
 export default class App extends Component {
     static displayName = App.name;
@@ -22,7 +23,7 @@ export default class App extends Component {
                         {<Route path='view_terms' element={<ViewTermsPage />} />}
                         {<Route path='view_payments' element={<ViewPaymentsPage />} />}
                         {<Route path='view_dsa' element={<ViewDSAPage />} />}
-                        {/*{<Route path='not_implemented' element={<NotImplemented />} />}*/}
+                        {<Route path='not_implemented' element={<NotImplementedPage />} />}
                     </Route>
                 </Routes>
             </Box>

@@ -7,7 +7,7 @@ const NavMenu = () => {
         <MenuList>
             <NavLink activeClassName='active' to='/'><MenuItem>Update Information</MenuItem></NavLink>
             
-            <NavLink activeClassName='active' to='/suck'><MenuItem>View Debtor Information</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>View Debtor Information</MenuItem></NavLink>
 
             <NavLink activeClassName='active' to='view_collections'><MenuItem>View Collections</MenuItem></NavLink>
 
@@ -17,17 +17,17 @@ const NavMenu = () => {
 
             <NavLink activeClassName='active' to='/view_dsa'><MenuItem>View DSA Summary</MenuItem></NavLink>
 
-            <NavLink activeClassName='active' to='/suck'><MenuItem>Request Remmitance Forms</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Request Remmitance Forms</MenuItem></NavLink>
 
-            <NavLink activeClassName='active' to='/suck'><MenuItem>Request Callback</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Request Callback</MenuItem></NavLink>
 
             <Divider />
 
-            <NavLink activeClassName='active' to='/suck'><MenuItem>Change Password</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Change Password</MenuItem></NavLink>
 
-            <NavLink activeClassName='active' to='/suck'><MenuItem>Change Login Info</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Change Login Info</MenuItem></NavLink>
 
-            <NavLink activeClassName='active' to='/suck'><MenuItem>Log Out</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Log Out</MenuItem></NavLink>
 
             <Divider />
         </MenuList>

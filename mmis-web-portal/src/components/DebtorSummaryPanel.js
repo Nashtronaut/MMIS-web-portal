@@ -40,7 +40,7 @@ const DebtorSummaryPanel = () => {
                 </Grid>
 
                 <Grid item xs={6} my={2}>
-                    <Stack direction="row" justifyContent='space-between'>
+                    <Stack direction="row" gap={1} justifyContent='end'>
                         <Button size="large" variant="contained">Apply</Button>
                         <Button size="large" variant="contained">Print</Button>
                         <Button size="large" variant="contained">Request Statement from MEP</Button>
