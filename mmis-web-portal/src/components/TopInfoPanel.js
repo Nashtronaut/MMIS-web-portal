@@ -16,19 +16,19 @@ const TopInfoPanel = (props) => {
     const person2 = props.person2;
 
     return (
-        <Paper variant="outlined" square sx={ {width: 1} }>
-            <Grid container alignItems="center" alignContent="center" justifyContent="center">
-                <Grid item xs={3}>
+        <Paper variant="outlined" square sx={ {width: 1, px: 6}}>
+            <Grid container alignItems="center" alignContent="center" justifyContent="space-between">
+                <Grid item>
                     <Box sx={centeringStyles}>
                         <LabeledInfo label="File Number" info={fileNumber} />
                     </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item>
                     <Box sx={centeringStyles}>
                         <VSPageheader person1={person1} person2={person2} sx={{ mt: 0 }} />
                     </Box>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item>
                     <Box sx={centeringStyles}>
                         <LabeledInfo label="File Status" info={fileStatus} />
                     </Box>

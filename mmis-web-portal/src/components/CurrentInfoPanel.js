@@ -12,10 +12,10 @@ const CurrentInfoPanel = (props) => {
 
     return (
         <Paper square variant="outlined">
-            <Grid container spacing="1" sx={{ px: 6, py: 2 }}>
+            <Grid container spacing="10" sx={{ px: 6, py: 2 }}>
                 <Grid item xs={12}>
                     <AlertTitle>
-                        Current Information on File
+                        S174 Update Personal Information
                     </AlertTitle>
                 </Grid>
                 <Grid item xs={12} sx={{mb: 3}}>

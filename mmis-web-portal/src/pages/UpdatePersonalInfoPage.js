@@ -1,7 +1,9 @@
-import { Stack } from '@mui/material'
+import { Stack, Box } from '@mui/material'
 import TopBar from '../components/TopBar'
 import PageInfo from '../components/PageInfo'
 import CurrentInfoPanel from '../components/CurrentInfoPanel'
+import UpdateInfoPanel from '../components/UpdateInfoPanel'
+import Footer from '../components/Footer'
 
 const UpdatePersonalInfoPage = () => {
     const name = "Nash Boisvert";
@@ -13,7 +15,7 @@ const UpdatePersonalInfoPage = () => {
     const country = "Canada";
 
     return (
-        <Stack spacing={1}>
+        <Stack spacing={1} sx={{ minHeight: '70rem', position: 'relative' }}>
             <TopBar
                 pageTitle="S174 Update Peronal Information"
                 fileNumber="123441-143"
@@ -25,7 +27,10 @@ const UpdatePersonalInfoPage = () => {
                 info="When our records indicate that we do not have a valid address for you, you are
                 required to provide your current address in order to view the remaining information regarding your file."
                 highlightInfo="Please enter address information below." />
-            {/*<UpdateInfoPanel />*/}
+            <UpdateInfoPanel {...{ name, dob, address, street, postalCode, province, country }} />
+            <Box sx={{ position: 'absolute', bottom: 0, width: 1 }}>
+                <Footer />
+            </Box>
         </Stack>
         );
 };
