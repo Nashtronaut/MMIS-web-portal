@@ -9,7 +9,7 @@ const ViewDSAPage = () => {
     const name = "Nash Boisvert";
 
     return (
-        <Stack spacing={1} sx={{ minHeight: '70rem', position: 'relative' }}>
+        <Stack spacing={1} sx={{ minHeight: '66.75rem', position: 'relative', pb: {xs: '6rem', sm: '4.8rem'} }}>
             <TopBar
                 pageTitle="S174 View DSA"
                 fileNumber="123441-143"

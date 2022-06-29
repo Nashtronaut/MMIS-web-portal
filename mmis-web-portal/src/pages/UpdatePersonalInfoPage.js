@@ -15,7 +15,7 @@ const UpdatePersonalInfoPage = () => {
     const country = "Canada";
 
     return (
-        <Stack spacing={1} sx={{ minHeight: '70rem', position: 'relative' }}>
+        <Stack spacing={1} sx={{ position: 'relative', pb: '4.8rem' }}>
             <TopBar
                 pageTitle="S174 Update Peronal Information"
                 fileNumber="123441-143"
@@ -28,7 +28,7 @@ const UpdatePersonalInfoPage = () => {
                 highlightInfo="Please enter address information below." />
             <CurrentInfoPanel {...{name, dob, address, street, postalCode, province, country}} />
             <UpdateInfoPanel {...{ name, dob, address, street, postalCode, province, country }} />
-            <Box sx={{ position: 'absolute', bottom: 0, width: 1 }}>
+            <Box sx={{ position: 'absolute', bottom: 0, width: 1}}>
                 <Footer />
             </Box>
         </Stack>

@@ -94,10 +94,6 @@ const UpdateInfoPanel = (props) => {
                         <MuiPhoneNumber variant="standard" fullWidth label="Fax" defaultCountry='ca' />
                     </Grid>
 
-                    <Grid item xs={12} sm={6}>
-                        <Divider />
-                    </Grid>
-
                     <Grid item xs={12} spacing={3}> 
                         <Stack direction='row' justifyContent="end" spacing={3}>
                             <Button variant="contained" size="large" color="error" >Clear</Button>

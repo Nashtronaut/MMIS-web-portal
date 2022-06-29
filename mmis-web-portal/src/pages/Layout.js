@@ -5,7 +5,7 @@ import SideMenu from '../components/SideMenu';
 
 const Layout = () => {
     return (
-        <Box sx={{  backgroundColor: '#F5F5F5', width: 1, height: '100vh' , p: '0.5rem'}}>
+        <Box sx={{ width: 1, p: '0.5rem'}}>
             <Grid container spacing={'10'} sx={{ maxWidth: '100rem', m: '0 auto', width: 1 }}>
                 <Grid item xs={12} lg={3} xl={2}>
                     <Stack spacing={1} height={1}>
