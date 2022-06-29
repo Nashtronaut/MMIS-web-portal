@@ -26,7 +26,7 @@ const UpdateInfoPanel = (props) => {
                         <Divider orientation="horizontal" />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <TextField
                             fullWidth
                             required
@@ -36,11 +36,11 @@ const UpdateInfoPanel = (props) => {
                             placeholder="johndoe@gmail.com" />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <CountrySelector country={country} />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <TextField
                             fullWidth
                             required
@@ -50,7 +50,7 @@ const UpdateInfoPanel = (props) => {
                             defaultValue={address} />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <TextField
                             fullWidth
                             required
@@ -60,7 +60,7 @@ const UpdateInfoPanel = (props) => {
                             defaultValue={street} />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <TextField
                             fullWidth
                             label="Apt."
@@ -68,7 +68,7 @@ const UpdateInfoPanel = (props) => {
                             placeholder="Unit A" />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <TextField
                             fullWidth
                             required
@@ -78,23 +78,23 @@ const UpdateInfoPanel = (props) => {
                             defaultValue={postalCode} />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <MuiPhoneNumber required variant="standard" fullWidth label="Home" defaultCountry='ca' />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <MuiPhoneNumber variant="standard" fullWidth label="Cell" defaultCountry='ca' />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <MuiPhoneNumber variant="standard" fullWidth label="Work" defaultCountry='ca' />
                     </Grid>
 
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6}>
                         <MuiPhoneNumber variant="standard" fullWidth label="Fax" defaultCountry='ca' />
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid item xs={12} sm={6}>
                         <Divider />
                     </Grid>
 

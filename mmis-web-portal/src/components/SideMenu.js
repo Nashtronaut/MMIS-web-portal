@@ -10,7 +10,7 @@ import { Stack } from '@mui/material';
 import NavMenu from './NavMenu';
 
 const govLogoStyles = {
-    height: '10.2rem',
+    height: {xs: 0, lg: '10.2rem'},
     width: 1,
     backgroundImage: 'url(\'Alberta-government-logo2.svg.png\')',
     backgroundRepeat: 'no-repeat',

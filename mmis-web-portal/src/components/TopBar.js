@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider'
-import TopInformationPanel from './TopInfoPanel'
+import TopInfoPanel from './TopInfoPanel'
 
 const TopBar = (props) => {
     const pageTitle = props.pageTitle
@@ -26,7 +26,7 @@ const TopBar = (props) => {
                         </Typography>
                     </Toolbar>
                 </AppBar>
-            <TopInformationPanel fileNumber={fileNumber} fileStatus={fileStatus} person1={person1} person2={person2} />
+            <TopInfoPanel fileNumber={fileNumber} fileStatus={fileStatus} person1={person1} person2={person2} />
         </Stack>
         );
 };
