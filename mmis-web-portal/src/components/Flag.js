@@ -8,10 +8,9 @@ const Flag = () => {
         width: 1,
         backgroundImage: { xs: 'url(\'Alberta-government-logo2.svg.png\')', lg: 'url(\'Flag_of_Alberta.png\')' },
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '50% 50%',
+        backgroundPosition: 'center',
         backgroundSize: 'contain',
-        my: 2,
-        mx: 1
+        my: 2
     }
 
     return (
