@@ -1,15 +1,13 @@
-import { BottomNavigation, Box, Grid, Stack } from '@mui/material';
+import { Box, Grid, Stack } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 import Flag from '../components/Flag';
 import SideMenu from '../components/SideMenu';
-import Footer from '../components/Footer'
 
-
-const containerSizing = {
+const containerSizing =  {
     width: '80%',
     maxWidth: '100rem',
     margin: '0 auto'
-};
+}
 
 const Layout = () => {
     return (
