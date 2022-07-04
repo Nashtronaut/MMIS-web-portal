@@ -21,11 +21,11 @@ const fakeData = [
         description: 'Motor Vehicle Restriction'
     },
     {
-        date: '2021-03/22',
+        date: '2021-03-22',
         description: 'Federal Support Deducation Notice'
     },
     {
-        date: '2021-03/22',
+        date: '2021-03-22',
         description: 'Personal Property Registry'
     }
 ]

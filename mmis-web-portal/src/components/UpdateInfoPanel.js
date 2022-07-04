@@ -8,6 +8,7 @@ const UpdateInfoPanel = (props) => {
     const postalCode = props.postalCode;
     const province = props.province;
     const country = props.country;
+    const city = props.city;
 
     return (
         <form>
@@ -38,6 +39,10 @@ const UpdateInfoPanel = (props) => {
 
                     <Grid item xs={12} sm={6}>
                         <CountrySelector country={country} />
+                    </Grid>
+
+                    <Grid item xs={12} sm={6}>
+                        <TextField fullWidth required variant="standard" label="Province/State" placeholder="Alberta" defaultValue={province} /> 
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
@@ -79,19 +84,15 @@ const UpdateInfoPanel = (props) => {
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
+                        <TextField fullWidth required variant="standard" label="City" placeholder="Edmonton" defaultValu={city} />
+                    </Grid>
+
+                    <Grid item xs={12} sm={6}>
                         <MuiPhoneNumber required variant="standard" fullWidth label="Home" defaultCountry='ca' />
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
                         <MuiPhoneNumber variant="standard" fullWidth label="Cell" defaultCountry='ca' />
-                    </Grid>
-
-                    <Grid item xs={12} sm={6}>
-                        <MuiPhoneNumber variant="standard" fullWidth label="Work" defaultCountry='ca' />
-                    </Grid>
-
-                    <Grid item xs={12} sm={6}>
-                        <MuiPhoneNumber variant="standard" fullWidth label="Fax" defaultCountry='ca' />
                     </Grid>
 
                     <Grid item xs={12} spacing={3}> 
