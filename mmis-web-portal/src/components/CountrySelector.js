@@ -452,7 +452,7 @@ const CountrySelector = (props) => {
             renderInput={(params) => (
                 <TextField
                     {...params}
-                    label="Choose a country"
+                    label="Country"
                     variant="standard"
                     inputProps={{
                         ...params.inputProps,

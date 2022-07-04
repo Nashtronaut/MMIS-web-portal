@@ -13,11 +13,12 @@ const UpdatePersonalInfoPage = () => {
     const postalCode = "T3V 4C3";
     const province = "Alberta";
     const country = "Canada";
+    const city = "Edmonton";
 
     return (
         <Stack spacing={1} sx={{ position: 'relative', pb: '4.8rem' }}>
             <TopBar
-                pageTitle="S174 Update Peronal Information"
+                pageTitle="S174 Update Personal Information"
                 fileNumber="123441-143"
                 fileStatus="Active"
                 person1={name}
@@ -26,8 +27,8 @@ const UpdatePersonalInfoPage = () => {
                 info="When our records indicate that we do not have a valid address for you, you are
                 required to provide your current address in order to view the remaining information regarding your file."
                 highlightInfo="Please enter address information below." />
-            <CurrentInfoPanel {...{name, dob, address, street, postalCode, province, country}} />
-            <UpdateInfoPanel {...{ name, dob, address, street, postalCode, province, country }} />
+            <CurrentInfoPanel {...{name, dob, address, street, postalCode, province, country, city}} />
+            <UpdateInfoPanel {...{ name, dob, address, street, postalCode, province, country, city}} />
             <Box sx={{ position: 'absolute', bottom: 0, width: 1}}>
                 <Footer />
             </Box>
