@@ -1,12 +1,11 @@
-import { MenuList, MenuItem, ListItemText, Divider } from '@mui/material'
-import { Link, NavLink } from 'react-router-dom'
+import { MenuList, MenuItem, Divider, IconButton } from '@mui/material'
+import { NavLink } from 'react-router-dom'
 
 const NavMenu = () => {
-
     return (
-        <MenuList>
+        <MenuList sx={{ pt: 0, pb: 0 }}>
             <NavLink activeClassName='active' to='/'><MenuItem>Update Information</MenuItem></NavLink>
-            
+
             <NavLink activeClassName='active' to='/not_implemented'><MenuItem>View Debtor Information</MenuItem></NavLink>
 
             <NavLink activeClassName='active' to='view_collections'><MenuItem>View Collections</MenuItem></NavLink>
@@ -29,9 +28,9 @@ const NavMenu = () => {
 
             <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Log Out</MenuItem></NavLink>
 
-            <Divider />
+            <Divider sx={{ display: { xs: 'none', lg: 'block' } }} />
         </MenuList>
         );
-};
+    };
 
 export default NavMenu;

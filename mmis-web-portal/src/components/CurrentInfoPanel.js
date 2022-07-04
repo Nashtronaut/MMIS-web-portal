@@ -1,4 +1,4 @@
-import { AlertTitle, Divider, Grid, Paper, Typography} from '@mui/material'
+import { AlertTitle, Divider, Grid, Paper} from '@mui/material'
 import LabeledInfo from './LabeledInfo'
 
 const CurrentInfoPanel = (props) => {
@@ -18,19 +18,19 @@ const CurrentInfoPanel = (props) => {
                         S174 Update Personal Information
                     </AlertTitle>
                 </Grid>
-                <Grid item xs={12} sx={{mb: 3}}>
+                <Grid item xs={12} sx={{mb: 1}}>
                     <Divider orientation="horizontal"/>    
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                     <LabeledInfo label="Name" info={name} />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                     <LabeledInfo label="Address" info={address + ' ' + street + ', ' + postalCode}/>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                     <LabeledInfo label="Date of birth" info={dob} />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} sm={6}>
                     <LabeledInfo label="Location" info={country + ', ' + province} />
                 </Grid>
             </Grid>    

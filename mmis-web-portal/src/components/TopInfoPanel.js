@@ -6,7 +6,6 @@ import VSPageheader from './VSPageheader'
 const centeringStyles = {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
 };
 
 const TopInfoPanel = (props) => {
@@ -17,21 +16,19 @@ const TopInfoPanel = (props) => {
 
     return (
         <Paper variant="outlined" square sx={ {width: 1, px: 6}}>
-            <Grid container alignItems="center" alignContent="center" justifyContent="space-between">
-                <Grid item>
-                    <Box sx={centeringStyles}>
-                        <LabeledInfo label="File Number" info={fileNumber} />
-                    </Box>
+            <Grid container alignItems="center" alignContent="center">
+                <Grid item xs={6} md={3} mb={2}>
+                    <LabeledInfo label="File Number" info={fileNumber} />
                 </Grid>
-                <Grid item>
+
+                <Grid item sm={12} md={6} order={{ xs: -1, md: 0 }}>
                     <Box sx={centeringStyles}>
                         <VSPageheader person1={person1} person2={person2} sx={{ mt: 0 }} />
                     </Box>
                 </Grid>
-                <Grid item>
-                    <Box sx={centeringStyles}>
-                        <LabeledInfo label="File Status" info={fileStatus} />
-                    </Box>
+
+                <Grid item xs={6} md={3} mb={2} textAlign="right">
+                    <LabeledInfo label="File Status" info={fileStatus} />
                 </Grid>
             </Grid>
          </Paper>

@@ -8,7 +8,7 @@ const ViewTermsPage = () => {
     const name = "Nash Boisvert";
 
     return (
-        <Stack spacing={1} sx={{ minHeight: '70rem', position: 'relative' }}>
+        <Stack spacing={1} sx={{ minHeight: '66.75rem', position: 'relative', pb: '6rem' }}>
             <TopBar
                 pageTitle="S174 View Terms"
                 fileNumber="123441-143"
