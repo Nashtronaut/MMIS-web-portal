@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom'
 const NavMenu = () => {
     return (
         <MenuList sx={{ pt: 0, pb: 0 }}>
-            <NavLink activeClassName='active' to='/'><MenuItem>Update Information</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/view_update_info'><MenuItem>Update Information</MenuItem></NavLink>
 
-            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>View Debtor Information</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/view_report_debtor_information'><MenuItem>Report Debtor Information</MenuItem></NavLink>
 
             <NavLink activeClassName='active' to='view_collections'><MenuItem>View Collections</MenuItem></NavLink>
 
@@ -18,13 +18,13 @@ const NavMenu = () => {
 
             <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Request Remmitance Forms</MenuItem></NavLink>
 
-            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Request Callback</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/view_request_callback'><MenuItem>Request Callback</MenuItem></NavLink>
 
             <Divider />
 
-            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Change Password</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/view_change_password'><MenuItem>Change Password</MenuItem></NavLink>
 
-            <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Change Login Info</MenuItem></NavLink>
+            <NavLink activeClassName='active' to='/view_change_login_info'><MenuItem>Change Login Info</MenuItem></NavLink>
 
             <NavLink activeClassName='active' to='/not_implemented'><MenuItem>Log Out</MenuItem></NavLink>
 

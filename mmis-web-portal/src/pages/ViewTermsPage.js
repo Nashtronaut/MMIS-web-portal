@@ -16,7 +16,7 @@ const ViewTermsPage = () => {
                 person1={name}
                 person2="Ronald Reagan" />
             <PageInfo header="Active Orders and Terms"
-                info="This screen only displays orders with active terms. MEP Terms indicate what payment arrangements are in palce for arrears."
+                info="This screen only displays orders with active terms. MEP Terms indicate what payment arrangements are in place for arrears."
                 highlightInfo="This results from a review of a Statements of Finances."
             />
             <TermsTable />
