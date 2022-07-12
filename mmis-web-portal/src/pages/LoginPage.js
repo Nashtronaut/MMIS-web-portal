@@ -8,35 +8,42 @@ import QuizIcon from '@mui/icons-material/Quiz';
 import PopDownMenu from '../components/PopDownMenu';
 import LoginPanel from '../components/LoginPanel';
 import Footer from '../components/Footer';
+import CreateAccountPanel from '../components/CreateAccountPanel';
+import PageInfo from '../components/PageInfo';
 
 const LoginPage = () => {
     return (
-        <Stack spacing={1} sx={{ minHeight: '66.75rem', position: 'relative', pb: '6rem' }}>
-            <AppBar position="static">
-                <Toolbar>
-                    <Box sx={{ display: 'flex', justifyContent: 'space-between', width: 1, alignItems: 'center' }}>
-                        <Typography variant="button" component="h1" sx={{ flexGrow: 1 }}>
-                            Login
-                        </Typography>
+        <Box sx={{ width: 1, p: '0.5rem' }}>
+            <Stack spacing={1} sx={{ maxWidth: '100rem', m: '0 auto', mt: 1, width: 1, minHeight: '71.05rem', position: 'relative', pb: '6rem' }}>
+                <AppBar position="static">
+                    <Toolbar>
+                        <Box sx={{ display: 'flex', justifyContent: 'space-between', width: 1, alignItems: 'center' }}>
+                            <Typography variant="button" component="h1" sx={{ flexGrow: 1 }}>
+                                Login
+                            </Typography>
 
-                        <Stack direction="row" alignItems='center'>
-                            <IconButton sx={{ color: 'white' }}>
-                                <QuizIcon />
-                            </IconButton>
-                            <Box sx={{ display: { xs: 'block', lg: 'none' } }}>
-                                <PopDownMenu />
-                            </Box>
-                        </Stack>
-                    </Box>
-                </Toolbar>
-            </AppBar>
+                            <Stack direction="row" alignItems='center'>
+                                <IconButton sx={{ color: 'white' }}>
+                                    <QuizIcon />
+                                </IconButton>
+                                <Box sx={{ display: { xs: 'block', lg: 'none' } }}>
+                                    <PopDownMenu />
+                                </Box>
+                            </Stack>
+                        </Box>
+                    </Toolbar>
+                </AppBar>
 
-            <LoginPanel />
+                <PageInfo header="Login to Existing Account..." />
+                <LoginPanel />
+                <PageInfo header="Create a New Account..." info="You will be able to add related files and accounts afterwards." />
+                <CreateAccountPanel />
 
-            <Box sx={{ position: 'absolute', bottom: 0, width: 1 }}>
-                <Footer />
-            </Box>
-        </Stack>
+                <Box sx={{ position: 'absolute', bottom: 0, width: 1 }}>
+                    <Footer />
+                </Box>
+            </Stack>
+        </Box>
     );
 };
 

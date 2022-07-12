@@ -427,6 +427,7 @@ const countries = [
 
 const CountrySelector = (props) => {
     const country = props.country;
+    const variant = props.variant;
     const countryIndex = countries.findIndex(item => item.label === `${country}`);
 
     return (
@@ -453,7 +454,7 @@ const CountrySelector = (props) => {
                 <TextField
                     {...params}
                     label="Country"
-                    variant="standard"
+                    variant={variant}
                     inputProps={{
                         ...params.inputProps,
                         autoComplete: 'new-password'

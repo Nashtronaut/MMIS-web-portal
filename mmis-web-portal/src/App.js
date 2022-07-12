@@ -21,8 +21,8 @@ export default class App extends Component {
         return (
             <Box>
                 <Routes>
+                    {<Route path='/login' element={<LoginPage />} />}
                     <Route path='/' element={<Layout />}>
-                        {<Route path='' element={<LoginPage />} />}
                         {<Route path='view_update_info' element={<UpdatePersonalInfoPage />} />}
                         {<Route path='view_report_debtor_information' element={<ViewReportDebtorInfoPage />} />}
                         {<Route path='view_collections' element={<ViewCollectionsPage />} />}
