@@ -13,7 +13,7 @@ const fakeData = [
         file: '123-456-342',
         judgementDate: '22-01-2023',
         type: 'MAINTENANCE',
-        amount: '582.00',
+        amount: '$ 582.00',
         cycle: 'Monthly'
     }
 ]
@@ -27,7 +27,7 @@ const TermsTable = () => {
                         <TableRow class="table-header">
                             <TableCell><Typography variant="button">Court Code</Typography></TableCell>
                             <TableCell><Typography variant="button">Court File Number</Typography></TableCell>
-                            <TableCell><Typography variant="button">Judgement Date</Typography></TableCell>
+                            <TableCell><Typography variant="button">Judgment Date</Typography></TableCell>
                             <TableCell><Typography variant="button">Term Type</Typography></TableCell>
                             <TableCell><Typography variant="button">Amount</Typography></TableCell>
                             <TableCell><Typography variant="button">Cycle</Typography></TableCell>

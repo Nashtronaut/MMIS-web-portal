@@ -1,4 +1,4 @@
-import { AlertTitle, Button, Divider, Grid, Paper, Stack, TextField, Typography } from '@mui/material'
+import { AlertTitle, Button, Divider, Grid, Paper, Stack, TextField, Typography, Checkbox } from '@mui/material'
 import MuiPhoneNumber from 'material-ui-phone-number'
 import CountrySelector from './CountrySelector'
 
@@ -9,6 +9,7 @@ const UpdateInfoPanel = (props) => {
     const province = props.province;
     const country = props.country;
     const city = props.city;
+    const email = props.email;
 
     return (
         <form>
@@ -34,7 +35,8 @@ const UpdateInfoPanel = (props) => {
                             variant="standard"
                             type="email"
                             label="Email"
-                            placeholder="johndoe@gmail.com" />
+                            placeholder="johndoe@gmail.com"
+                            defaultValue={email} />
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
@@ -42,7 +44,13 @@ const UpdateInfoPanel = (props) => {
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <TextField fullWidth required variant="standard" label="Province/State" placeholder="Alberta" defaultValue={province} /> 
+                        <TextField
+                            fullWidth
+                            required
+                            variant="standard"
+                            label="Province/State"
+                            placeholder="Alberta"
+                            defaultValue={province} />
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
@@ -84,18 +92,40 @@ const UpdateInfoPanel = (props) => {
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <TextField fullWidth required variant="standard" label="City" placeholder="Edmonton" defaultValu={city} />
+                        <TextField
+                            fullWidth
+                            required
+                            variant="standard"
+                            label="City"
+                            placeholder="Edmonton"
+                            defaultValue={city} />
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <MuiPhoneNumber required variant="standard" fullWidth label="Home" defaultCountry='ca' />
+                        <MuiPhoneNumber
+                            required
+                            variant="standard"
+                            fullWidth
+                            label="Home"
+                            defaultCountry='ca' />
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <MuiPhoneNumber variant="standard" fullWidth label="Cell" defaultCountry='ca' />
+                        <MuiPhoneNumber
+                            variant="standard"
+                            fullWidth
+                            label="Cell"
+                            defaultCountry='ca' />
                     </Grid>
 
-                    <Grid item xs={12} spacing={3}> 
+                    <Grid item xs={12} lg={6}>
+                        <Typography variant="subtitle" sx={{ display: 'flex', alignItems: 'center' }}>
+                            <Checkbox />
+                            Allow MMIS-Portal to communicate VIA SMS text messaging?
+                        </Typography>
+                    </Grid>
+
+                    <Grid item xs={12} lg={6} spacing={3}>
                         <Stack direction='row' justifyContent="end" spacing={3}>
                             <Button variant="contained" size="large" color="error" >Clear</Button>
                             <Button type="submit" variant="contained" size="large">Submit</Button>

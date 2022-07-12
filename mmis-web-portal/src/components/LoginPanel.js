@@ -11,7 +11,7 @@ const LoginPanel = () => {
                             fullWidth
                             label="Email"
                             required
-                            variant="standard"
+                            variant="outlined"
                             type="Email" />
                     </Grid>
 
@@ -20,7 +20,7 @@ const LoginPanel = () => {
                             fullWidth
                             label="Password"
                             required
-                            variant="standard"
+                            variant="outlined"
                             type="password" />
                     </Grid>
 

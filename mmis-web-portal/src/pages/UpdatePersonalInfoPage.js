@@ -14,6 +14,7 @@ const UpdatePersonalInfoPage = () => {
     const province = "Alberta";
     const country = "Canada";
     const city = "Edmonton";
+    const email = "nash@gmail.com";
 
     return (
         <Stack spacing={1} sx={{ position: 'relative', pb: '4.8rem' }}>
@@ -28,7 +29,7 @@ const UpdatePersonalInfoPage = () => {
                 required to provide your current address in order to view the remaining information regarding your file."
                 highlightInfo="Please enter address information below." />
             <CurrentInfoPanel {...{name, dob, address, street, postalCode, province, country, city}} />
-            <UpdateInfoPanel {...{ name, dob, address, street, postalCode, province, country, city}} />
+            <UpdateInfoPanel {...{ name, dob, address, street, postalCode, province, country, city, email}} />
             <Box sx={{ position: 'absolute', bottom: 0, width: 1}}>
                 <Footer />
             </Box>

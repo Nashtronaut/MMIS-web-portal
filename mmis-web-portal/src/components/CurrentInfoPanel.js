@@ -31,7 +31,7 @@ const CurrentInfoPanel = (props) => {
                     <LabeledInfo label="Date of birth" info={dob} />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <LabeledInfo label="Location" info={country + ', ' + province} />
+                    <LabeledInfo label="Location" info={country + ', ' + province + ', ' + "Edmonton"} />
                 </Grid>
             </Grid>    
         </Paper>
