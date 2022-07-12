@@ -1,9 +1,12 @@
 import { Button, Checkbox, Divider, Grid, Paper, TextField, Typography } from "@mui/material";
 import MuiPhoneNumber from "material-ui-phone-number";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import CountrySelector from "./CountrySelector";
 
 const CreateAccountPanel = () => {
+    let [cellphoneCheck, setCellphoneCheck] = useState(false);
+
     return (
         <Paper square variant='outlined' sx={{ px: 6, pb: 2, pt: 4, width: 1 }}>
                 <Grid container columnSpacing='40' rowSpacing='15' >
@@ -113,7 +116,6 @@ const CreateAccountPanel = () => {
 
                         <Grid item xs={12} sm={6}>
                             <MuiPhoneNumber
-                                required
                                 variant="outlined"
                                 fullWidth
                                 label="Home"
@@ -125,6 +127,7 @@ const CreateAccountPanel = () => {
                                 variant="outlined"
                                 fullWidth
                                 label="Cell"
+                                required={cellphoneCheck}
                                 defaultCountry='ca' />
                         </Grid>
 
@@ -139,14 +142,14 @@ const CreateAccountPanel = () => {
 
                         <Grid item xs={12} lg={6}>
                             <Typography variant="subtitle" sx={{ display: 'flex', alignItems: 'center' }}>
-                                <Checkbox />
+                            <Checkbox id="cellphoneCheck" onClick={() => setCellphoneCheck(!cellphoneCheck)}/>
                                 Allow MMIS-Portal to communicate VIA SMS text messaging?
                             </Typography>
                         </Grid>
                     </Grid>
 
                     <Grid container item xs={12} spacing={3} my={2} justifyContent="end">
-                        <NavLink activeClassName='active' to='/view_update_info'>
+                        <NavLink activeClassName='active' to='/logged_in/view_update_info'>
                             <Button type="submit" variant="contained" size="large">Create Account</Button>
                         </NavLink>
                     </Grid>

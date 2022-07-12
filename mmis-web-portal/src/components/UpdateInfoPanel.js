@@ -1,5 +1,6 @@
 import { AlertTitle, Button, Divider, Grid, Paper, Stack, TextField, Typography, Checkbox } from '@mui/material'
 import MuiPhoneNumber from 'material-ui-phone-number'
+import { useState } from 'react';
 import CountrySelector from './CountrySelector'
 
 const UpdateInfoPanel = (props) => {
@@ -10,6 +11,8 @@ const UpdateInfoPanel = (props) => {
     const country = props.country;
     const city = props.city;
     const email = props.email;
+
+    let [cellphoneCheck, setCellphoneCheck] = useState(true);
 
     return (
         <form>
@@ -112,6 +115,7 @@ const UpdateInfoPanel = (props) => {
 
                     <Grid item xs={12} sm={6}>
                         <MuiPhoneNumber
+                            required={cellphoneCheck}
                             variant="standard"
                             fullWidth
                             label="Cell"
@@ -127,7 +131,7 @@ const UpdateInfoPanel = (props) => {
 
                     <Grid item xs={12} lg={6}>
                         <Typography variant="subtitle" sx={{ display: 'flex', alignItems: 'center' }}>
-                            <Checkbox />
+                            <Checkbox checked onClick={() => setCellphoneCheck(!cellphoneCheck)}/>
                             Allow MMIS-Portal to communicate VIA SMS text messaging?
                         </Typography>
                     </Grid>

@@ -54,7 +54,7 @@ const DebtorSummaryPanel = () => {
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Box sx={{ px: { xs: 0, md: 6 } }}>
+                    <Box sx={{ px: { xs: 0, md: 6 }, borderBottom: 1, borderColor: 'divider' }}>
                         <DebtorSummaryDataPanel />
                     </Box>
                 </Grid>
