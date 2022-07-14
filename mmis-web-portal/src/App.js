@@ -8,11 +8,13 @@ import ViewTermsPage from './pages/ViewTermsPage';
 import Layout from './pages/Layout';
 import ViewPaymentsPage from './pages/ViewPaymentsPage';
 import ViewDSAPage from './pages/ViewDSAPage';
-import ViewRequestCallbackPage from './pages/ViewRequestCallbackPage'
-import ViewChangeLoginInfoPage from './pages/ViewChangeLoginInfoPage'
-import ViewChangePasswordPage from './pages/ViewChangePasswordPage'
-import NotImplementedPage from './pages/NotImplementedPage'
-import LoginPage from './pages/LoginPage'
+import ViewRequestCallbackPage from './pages/ViewRequestCallbackPage';
+import ViewSendDocumentsPage from './pages/ViewSendDocumentsPage';
+import ViewChangeLoginInfoPage from './pages/ViewChangeLoginInfoPage';
+import ViewChangePasswordPage from './pages/ViewChangePasswordPage';
+import ViewCommunicationsPage from './pages/ViewCommuncationsPage';
+import NotImplementedPage from './pages/NotImplementedPage';
+import LoginPage from './pages/LoginPage';
 
 export default class App extends Component {
     static displayName = App.name;
@@ -30,6 +32,8 @@ export default class App extends Component {
                         {<Route path='view_payments' element={<ViewPaymentsPage />} />}
                         {<Route path='view_dsa' element={<ViewDSAPage />} />}
                         {<Route path='view_request_callback' element={<ViewRequestCallbackPage />} />}
+                        {<Route path='view_send_documents' element={<ViewSendDocumentsPage />} />}
+                        {<Route path='view_communications' element={<ViewCommunicationsPage />} />}
                         {<Route path='view_change_login_info' element={<ViewChangeLoginInfoPage />} />}
                         {<Route path='view_change_password' element={<ViewChangePasswordPage />} />}
                         {<Route path='not_implemented' element={<NotImplementedPage />} />}

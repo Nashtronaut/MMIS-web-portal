@@ -14,8 +14,6 @@ const DebtorSummaryPanel = () => {
         setValue(newValue);
     }
 
-    console.log(value)
-
     return (
         <Paper square variant="outlined" sx={{ mb: 3 }}>
             <TabContext value={value}>
