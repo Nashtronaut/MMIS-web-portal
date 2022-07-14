@@ -1,8 +1,7 @@
 import { TabContext, TabList, TabPanel } from "@mui/lab";
-import { Button, FormControl, Grid, InputLabel, MenuItem, Paper, Select, Stack, Tab, Typography } from "@mui/material";
+import { FormControl, Grid, InputLabel, MenuItem, Paper, Select, Tab } from "@mui/material";
 import { useState } from "react";
 import FormFillOut from "./FormFillOut";
-
 
 const SendDocumentsPanel = () => {
 
@@ -41,12 +40,13 @@ const SendDocumentsPanel = () => {
                                     value={selectedForm}
                                     onChange={handleSelectChange}>
                                     <MenuItem value={0}>Income Information</MenuItem>
-                                    <MenuItem value={1}>Consent to Recalculate (Self-employement situations)</MenuItem>
-                                    <MenuItem value={2}>Court Order (i.e new child support order)</MenuItem>
-                                    <MenuItem value={3}>Court Application regarding Child support</MenuItem>
-                                    <MenuItem value={4}>Notice of Objection Documents</MenuItem>
-                                    <MenuItem value={5}>Waiver Request</MenuItem>
-                                    <MenuItem value={6}>Withdrawal Request</MenuItem>
+                                    <MenuItem value={1}>Direct Deposit</MenuItem>
+                                    <MenuItem value={2}>Consent to Recalculate (Self-employement situations)</MenuItem>
+                                    <MenuItem value={3}>Court Order (i.e new child support order)</MenuItem>
+                                    <MenuItem value={4}>Court Application regarding Child support</MenuItem>
+                                    <MenuItem value={5}>Notice of Objection Documents</MenuItem>
+                                    <MenuItem value={6}>Waiver Request</MenuItem>
+                                    <MenuItem value={7}>Withdrawal Request</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>

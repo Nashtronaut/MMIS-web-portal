@@ -3,6 +3,7 @@ import TopBar from '../components/TopBar'
 import PageInfo from '../components/PageInfo'
 import CommunicationsTable from '../components/CommuncationsTable'
 import Footer from '../components/Footer'
+import ContactInformation from '../components/ContactInformation'
 
 const ViewCommunicationsPage = () => {
     const name = "Nash Boisvert";
@@ -16,9 +17,14 @@ const ViewCommunicationsPage = () => {
                 person1={name}
                 person2="Ronald Reagan" />
             <PageInfo header="Communications Between MMIS and User"
-                      info="Here you can view the communcations that have taken place between you and MMIS." />
+                info="Here you can view the communcations that have taken place between you and MMIS."
+                highlightInfo="Please note that these records are only stored for 1 year." />
 
-            <CommunicationsTable /> 
+            <CommunicationsTable />
+
+            <PageInfo header="Office Contact Information" />
+
+            <ContactInformation /> 
 
             <Box sx={{ position: 'absolute', bottom: 0, width: 1, mt: 1 }}>
                 <Footer />
