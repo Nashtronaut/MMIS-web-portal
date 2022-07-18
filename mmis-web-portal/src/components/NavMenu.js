@@ -1,6 +1,7 @@
-import { MenuList, MenuItem, Divider, Dialog, Button, DialogTitle, DialogContent, DialogContentText, DialogActions, Typography, Snackbar, Alert, Menu } from '@mui/material'
+import { MenuList, MenuItem, Divider, Dialog, Button, DialogTitle, DialogContent, DialogContentText, DialogActions, Typography, Snackbar, Alert, Menu, ListItemIcon, ListItemText } from '@mui/material'
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom'
+import PersonIcon from "@mui/icons-material/Person"
 
 const NavMenu = () => {
 
@@ -49,8 +50,16 @@ const NavMenu = () => {
         setSentMessageOpen(false);
     }
 
+    const [switchFileModal, setSwitchFileModal] = useState(false);
+
+    const handleToggleFileModal = () => {
+        setSwitchFileModal(!switchFileModal)
+    }
+
     return (
         <MenuList sx={{ pt: 0, pb: 0 }}>
+            <MenuItem onClick={handleToggleFileModal}>Switch Files</MenuItem>
+
             <NavLink activeClassName='active' to='/logged_in/view_update_info'><MenuItem>Update Information</MenuItem></NavLink>
 
             <NavLink activeClassName='active' to='/logged_in/view_report_debtor_information'><MenuItem>Report Debtor Information</MenuItem></NavLink>
@@ -102,6 +111,44 @@ const NavMenu = () => {
                         Confirm
                     </Button>
                 </DialogActions>
+            </Dialog>
+
+            <Dialog open={switchFileModal} onClose={handleToggleFileModal}>
+                <DialogTitle>
+                    Switch Files
+                </DialogTitle>
+                <DialogContent>
+                    <DialogContentText>
+                        <Typography>
+                            You can switch to view another file here.
+                        </Typography>
+                        <Typography>
+                            (NOTE: This will only be visible for persons with multiple files.)
+                        </Typography>
+
+                        <MenuList>
+                            <MenuItem onClick={handleToggleFileModal}>
+                                <ListItemIcon className="active">
+                                    <PersonIcon />
+                                </ListItemIcon>
+                                <ListItemText className="active">File #123441-143</ListItemText>
+                            </MenuItem>
+                            <MenuItem onClick={handleToggleFileModal}>
+                                <ListItemIcon>
+                                    <PersonIcon />
+                                </ListItemIcon>
+                                <ListItemText>File #165214-147</ListItemText>
+                            </MenuItem>
+                            <MenuItem onClick={handleToggleFileModal}>
+                                <ListItemIcon>
+                                    <PersonIcon />
+                                </ListItemIcon>
+                                <ListItemText>File #123445123-654</ListItemText>
+                            </MenuItem>
+                        </MenuList>
+
+                    </DialogContentText>
+                </DialogContent>
             </Dialog>
 
             <Snackbar open={successMessageOpen} autoHideDuration={6000} onClose={handleSuccessClose}>

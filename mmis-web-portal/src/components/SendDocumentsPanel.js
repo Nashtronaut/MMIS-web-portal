@@ -2,6 +2,7 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { FormControl, Grid, InputLabel, MenuItem, Paper, Select, Tab } from "@mui/material";
 import { useState } from "react";
 import FormFillOut from "./FormFillOut";
+import UploadFormPanel from "./Forms/UploadFormPanel";
 
 const SendDocumentsPanel = () => {
 
@@ -29,7 +30,7 @@ const SendDocumentsPanel = () => {
         <form>
             <TabContext value={value}>
                 <Paper square variant='outlined' sx={{ width: 1 }}>
-                    <Grid container columnSpacing='40' rowSpacing='25' sx={{ px: 6, pb: 2, pt: 4 }}>
+                    <Grid container columnSpacing='40' rowSpacing='25' sx={{ px: {xs: 1, lg: 6}, pb: 2, pt: 4 }}>
                         <Grid item xs={12} sm={6}>
                             <FormControl fullWidth>
                                 <InputLabel id="demo-simple-select-label">Select Form Type...</InputLabel>
@@ -39,14 +40,15 @@ const SendDocumentsPanel = () => {
                                     label="Select Form Type..."
                                     value={selectedForm}
                                     onChange={handleSelectChange}>
-                                    <MenuItem value={0}>Income Information</MenuItem>
+                                    <MenuItem value={0}>Email and/or Fax Authorization</MenuItem>
                                     <MenuItem value={1}>Direct Deposit</MenuItem>
-                                    <MenuItem value={2}>Consent to Recalculate (Self-employement situations)</MenuItem>
-                                    <MenuItem value={3}>Court Order (i.e new child support order)</MenuItem>
-                                    <MenuItem value={4}>Court Application regarding Child support</MenuItem>
-                                    <MenuItem value={5}>Notice of Objection Documents</MenuItem>
-                                    <MenuItem value={6}>Waiver Request</MenuItem>
-                                    <MenuItem value={7}>Withdrawal Request</MenuItem>
+                                    <MenuItem disabled value={2}>Income Information</MenuItem>
+                                    <MenuItem disabled value={3}>Consent to Recalculate (Self-employement situations)</MenuItem>
+                                    <MenuItem disabled value={4}>Court Order (i.e new child support order)</MenuItem>
+                                    <MenuItem disabled value={5}>Court Application regarding Child support</MenuItem>
+                                    <MenuItem disabled value={6}>Notice of Objection Documents</MenuItem>
+                                    <MenuItem disabled value={7}>Waiver Request</MenuItem>
+                                    <MenuItem disabled value={8}>Withdrawal Request</MenuItem>
                                 </Select>
                             </FormControl>
                         </Grid>
@@ -62,7 +64,7 @@ const SendDocumentsPanel = () => {
                             </TabPanel>
 
                             <TabPanel value={1}>
-                                <p>its working</p>
+                                <UploadFormPanel />
                             </TabPanel>
                         </Grid>
                     </Grid>
