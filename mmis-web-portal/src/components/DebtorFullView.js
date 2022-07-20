@@ -13,87 +13,27 @@ const DebtorFullView = () => {
             charges: '',
             paidOut: -1116.00,
             totalBalance: 77.00 
+        },
+        {
+            transactionDate: '2022-04-07',
+            effectiveDate: '2022-04-06',
+            referenceNumber: 3214123,
+            description: 'Direct Deposit',
+            partyNumber: 12365173,
+            charges: -110.00,
+            paidOut: '',
+            totalBalance: -177.00 
+        },
+        {
+            transactionDate: '2022-06-22',
+            effectiveDate: '2022-06-21',
+            referenceNumber: 56234532,
+            description: 'Withdrawal',
+            partyNumber: 2134532,
+            charges: -1360.00,
+            paidOut: '',
+            totalBalance: -1324.00
         }
-        /*{
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },
-        {
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },
-        {
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },
-        {
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },
-        {
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },
-        {
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },
-        {
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },
-        {
-            transactionDate: ,
-            effectiveDate: ,
-            referenceNumber: ,
-            description: ,
-            partyNumber: ,
-            charges: ,
-            paidOut: ,
-            totalBalance: 
-        },*/
     ]
 
     return (

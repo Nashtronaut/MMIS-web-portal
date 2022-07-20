@@ -56,8 +56,18 @@ const NavMenu = () => {
         setSwitchFileModal(!switchFileModal)
     }
 
+    const [switchMessageOpen, setSwitchMessageOpen] = useState(false);
+
+    const handleSwitchMessageOpen = () => {
+        setSwitchMessageOpen(true);
+    }
+
+    const handleSwitchClose = () => {
+        setSwitchMessageOpen(false);
+    };
+
     return (
-        <MenuList sx={{ pt: 0, pb: 0 }}>
+        <MenuList className={'nav-menu' } sx={{ pt: 0, pb: 0 }}>
             <MenuItem onClick={handleToggleFileModal}>Switch Files</MenuItem>
 
             <NavLink activeClassName='active' to='/logged_in/view_update_info'><MenuItem>Update Information</MenuItem></NavLink>
@@ -127,19 +137,19 @@ const NavMenu = () => {
                         </Typography>
 
                         <MenuList>
-                            <MenuItem onClick={handleToggleFileModal}>
+                            <MenuItem onClick={() => { handleToggleFileModal(); handleSwitchMessageOpen(); }}>
                                 <ListItemIcon className="active">
                                     <PersonIcon />
                                 </ListItemIcon>
                                 <ListItemText className="active">File #123441-143</ListItemText>
                             </MenuItem>
-                            <MenuItem onClick={handleToggleFileModal}>
+                            <MenuItem onClick={() => { handleToggleFileModal(); handleSwitchMessageOpen(); }}>
                                 <ListItemIcon>
                                     <PersonIcon />
                                 </ListItemIcon>
                                 <ListItemText>File #165214-147</ListItemText>
                             </MenuItem>
-                            <MenuItem onClick={handleToggleFileModal}>
+                            <MenuItem onClick={() => { handleToggleFileModal(); handleSwitchMessageOpen(); }}>
                                 <ListItemIcon>
                                     <PersonIcon />
                                 </ListItemIcon>
@@ -166,6 +176,12 @@ const NavMenu = () => {
             <Snackbar open={sentMessageOpen} autoHideDuration={6000} onClose={handleSentClose}>
                 <Alert onClose={handleSentClose} severity="success" sx={{ width: '100%' }}>
                     We have already recieved your request and are working on mailing your forms as soon as possible! Thank you. 
+                </Alert>
+            </Snackbar>
+
+            <Snackbar open={switchMessageOpen} autoHideDuration={6000} onClose={handleSwitchClose}>
+                <Alert onClose={handleSwitchClose} severity="success" sx={{ width: '100%' }}>
+                    You have successfully switched files.
                 </Alert>
             </Snackbar>
 

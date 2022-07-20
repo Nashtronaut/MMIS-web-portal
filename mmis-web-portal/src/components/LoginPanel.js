@@ -28,7 +28,7 @@ const LoginPanel = () => {
                         <Checkbox />
                         Remember me on this computer. (Only check this option on personal devices.)
                     </Typography>
-                    <NavLink activeClassName='active' to='/view_update_info'>
+                    <NavLink activeClassName='active' to='/logged_in/view_update_info'>
                         <Button type="submit" variant="contained" size="large">Login</Button>
                     </NavLink>
                 </Grid>

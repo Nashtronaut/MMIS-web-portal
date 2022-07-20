@@ -5,7 +5,7 @@ let date = new Date();
 
 const Footer = () => {
     return (
-        <Paper square variant="outlined" sx={{ backgroundColor: "#1976D2", color: 'white'}}>
+        <Paper square variant="outlined" sx={{ backgroundColor: "#2c3135", color: 'white'}}>
             <Grid container sx={{ px: 6, py: 1 }} alignItems="center" justifyContent="space-between">
                 <Grid item xs={12}>
                     <Typography variant="caption">

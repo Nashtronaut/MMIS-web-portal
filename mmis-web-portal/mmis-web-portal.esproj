@@ -10,4 +10,7 @@
   <ItemGroup>
     <Folder Include="src\components\Forms\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="public\arms.jpg" />
+  </ItemGroup>
 </Project>

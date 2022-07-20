@@ -149,7 +149,7 @@ const CreateAccountPanel = () => {
                     </Grid>
 
                     <Grid container item xs={12} spacing={3} my={2} justifyContent="end">
-                        <NavLink activeClassName='active' to='/logged_in/view_update_info'>
+                    <NavLink activeClassName='active' to='/logged_in/view_change_login_info'>
                             <Button type="submit" variant="contained" size="large">Create Account</Button>
                         </NavLink>
                     </Grid>

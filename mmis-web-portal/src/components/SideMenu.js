@@ -7,7 +7,7 @@ import NavMenu from './NavMenu';
 const govLogoStyles = {
     height: {xs: 0, lg: '10.2rem'},
     width: 1,
-    backgroundImage: 'url(\'Alberta-government-logo2.svg.png\')',
+    backgroundImage: 'url(\'mb-logo.png\')',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '50% 85%',
     backgroundSize: 'contain'

@@ -10,6 +10,7 @@ import LoginPanel from '../components/LoginPanel';
 import Footer from '../components/Footer';
 import CreateAccountPanel from '../components/CreateAccountPanel';
 import PageInfo from '../components/PageInfo';
+import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 
 const LoginPage = () => {
     return (
@@ -23,6 +24,11 @@ const LoginPage = () => {
                             </Typography>
 
                             <Stack direction="row" alignItems='center'>
+                                <ToggleButtonGroup value="en" exclusive>
+                                    <ToggleButton value="en">English</ToggleButton>
+                                    <ToggleButton value="fr">Francais</ToggleButton>
+                                </ToggleButtonGroup>
+
                                 <IconButton sx={{ color: 'white' }}>
                                     <QuizIcon />
                                 </IconButton>

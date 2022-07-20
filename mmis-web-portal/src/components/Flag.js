@@ -6,7 +6,7 @@ const Flag = () => {
     const styles = {
         height: '10.2rem',
         width: 1,
-        backgroundImage: { xs: 'url(\'Alberta-government-logo2.svg.png\')', lg: 'url(\'Flag_of_Alberta.png\')' },
+        backgroundImage: { xs: 'url(\'mb-logo.png\')', lg: 'url(\'arms.jpg\')' },
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'contain',

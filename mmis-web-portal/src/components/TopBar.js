@@ -8,6 +8,7 @@ import Stack from '@mui/material/Stack';
 import TopInfoPanel from './TopInfoPanel'
 import QuizIcon from '@mui/icons-material/Quiz';
 import PopDownMenu from './PopDownMenu';
+import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 
 const TopBar = (props) => {
     const pageTitle = props.pageTitle
@@ -26,6 +27,11 @@ const TopBar = (props) => {
                         </Typography>
 
                         <Stack direction="row" alignItems='center'>
+                            <ToggleButtonGroup size="small" sx={{ display: {xs: 'none', lg: 'block'}, backgroundColor: 'white', mr: 2}} value="en" exclusive>
+                                <ToggleButton sx={{ px: 2 }} value="en">English</ToggleButton>
+                                <ToggleButton sx={{ px: 2 }} value="fr">Francais</ToggleButton>
+                            </ToggleButtonGroup>
+
                             <IconButton sx={{ color: 'white' }}>
                                 <QuizIcon  />
                             </IconButton>
